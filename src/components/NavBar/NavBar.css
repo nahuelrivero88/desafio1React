@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+  }
+  .logo {
+    font-weight: 900;
+    box-shadow: 5px 5px 10px grey;
+  }
+  .nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav li {
+    padding: 15px;
+  }
