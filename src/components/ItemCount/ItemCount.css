@@ -1,0 +1,10 @@
+.btn-restar, .btn-sumar{
+    width:6rem;
+    height:2rem;
+}
+.SumRest {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}

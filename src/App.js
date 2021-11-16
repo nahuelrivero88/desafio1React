@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="miApp">
       <NavBar />
-      <ItemListContainer greeting='Bienvenidos a la tienda' />
+      <ItemListContainer greeting='Distribuidora Riverinhio' />
       
     </div>
   );

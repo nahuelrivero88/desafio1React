@@ -6,3 +6,9 @@
     color: darkblue;
     text-shadow: 0.5px 3px 6px rgb(22, 153, 230);
 }
+.listaProductos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}

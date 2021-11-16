@@ -6,7 +6,7 @@ export const NavBar = () => {
     return (
     
     <header className="header">
-        <h1 className="logo">Rivero Store</h1>
+        <h1 className="logo">Logo</h1>
         <nav>
             <ul className = "nav">
                 <li>Inicio</li>
