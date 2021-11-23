@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { pedirDatos } from './pedirDatos'
+import { PedirDatos } from './PedirDatos'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import "./ItemDetailContainer.css";
 
@@ -10,7 +10,7 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         
         setCarga(true)
-        pedirDatos()
+        PedirDatos()
             .then( (funciona) => {
                 setProductos(funciona)
             })
