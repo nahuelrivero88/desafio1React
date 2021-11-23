@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { pedirDatos } from './pedirDatos'
-import { ItemList } from '../ItemList/ItemList'
-import "./ItemListContainer.css";
+import { ItemDetail } from '../ItemDetail/ItemDetail'
+import "./ItemDetailContainer.css";
 
-export const ItemListContainer = () => {
+export const ItemDetailContainer = () => {
   const [carga, setCarga] = useState(false)
     const [productos, setProductos] = useState([])
 
@@ -28,7 +28,7 @@ export const ItemListContainer = () => {
             {
                 carga
                     ? <h3>Cargando productos...</h3> 
-                    : <ItemList items={productos}/>
+                    : <ItemDetail items={productos}/>
             }
         </>
     )
