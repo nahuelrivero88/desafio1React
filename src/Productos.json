@@ -1,0 +1,5 @@
+[
+    {"id":1, "nombre": "Cerveza Corona", "precio":50 },
+    {"id":2, "nombre": "Cerveza Estrella Galicia", "precio":45 },
+    {"id":3, "nombre": "Cerveza Patagonia", "precio":75 }
+]
