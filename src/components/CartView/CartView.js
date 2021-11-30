@@ -2,8 +2,8 @@ import React from 'react'
 
 export const CartView = () => {
     return (
-        <div className="container my-5">
-            <h2>Cart View</h2>
+        <div className="text-center mt-5">
+            <h2>Productos agregados al carrito:</h2>
         </div>
     )
 }
