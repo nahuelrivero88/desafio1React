@@ -1,25 +1,20 @@
-import React from "react";
-import { Container, Row } from "react-bootstrap";
+import React from 'react'
+import { useNavigate } from 'react-router'
 
-import "./ItemDetail.css";
+export const ItemDetail = ({id, nombre, imagen, precio, categoria}) => {
 
-export const ItemDetail = () => {
-  return (
-    <Container>
-      <h1 className="tituloInicial"> Distribuidora Riverinhio </h1>
-      <Row>
-        <article key="1" className="card m-3" style={{ width: "18rem" }}>
-          <img
-            src= "https://www.distribuidorabebidas.com.uy/wp-content/uploads/sites/31/2018/01/botella_cerveza_corona_355cc.jpg"
-            alt="Corona"
-            variant="top"
-          />
-          <div className="card-body">
-            <h3 className="card-title text-center">Corona</h3>
-            <p className="card-text text-center">Precio: $45</p>
-          </div>
-        </article>
-      </Row>
-    </Container>
-  );
-};
+    const navigate = useNavigate()
+
+    const handleVolver = () => {
+        navigate(-1)
+    }
+    return (
+        <div>
+            <h2>{nombre}</h2>
+            <img src={imagen} alt={nombre}/>
+            <p>{categoria}</p>
+            <p>Precio: ${precio}</p>
+            <button className="btn btn-dark" onClick={handleVolver}>Volver</button>
+        </div>
+    )
+}

@@ -1,9 +1,9 @@
-import { Productos } from "../../Productos.json"
+import { stock } from "../../data/Stock"
 
 export const pedirDatos = () => {
     return new Promise((resolve, reject) => {         
         setTimeout(() => {
-            resolve(Productos)
+            resolve(stock)
         }, 2000)
     })
 }

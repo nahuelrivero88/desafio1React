@@ -1,0 +1,9 @@
+.tituloInicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: #a7861d;
+    text-shadow: -2px 1px 3px rgb(121, 92, 14);
+    margin-top:1rem;
+}
