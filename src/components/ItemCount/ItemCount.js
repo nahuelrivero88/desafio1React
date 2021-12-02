@@ -1,11 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import {Button} from "react-bootstrap";
 import "./ItemCount.css"
 
-export const ItemCount = ({stock}) => {
-
-    const [counter, setCounter] = useState(1);
-
+export const ItemCount = ({stock, counter, setCounter, onAdd}) => {
+    
     const sumar = () => {
         if (stock > counter){
             setCounter(counter+1);
@@ -28,6 +26,8 @@ export const ItemCount = ({stock}) => {
             <Button className="btn btn-restar" variant="danger" onClick={restar}>-</Button>
             <Button className="btn btn-sumar" variant="success" onClick={sumar}>+</Button>
             </div>
+            <button className="btn btn-dark" onClick={onAdd}>Agregar al carrito </button>
+            
 
         </div>
     )
